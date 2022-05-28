@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42B69087-5B40-4546-BD20-1C457059E83F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KartHafiza</RootNamespace>
+    <AssemblyName>KartHafiza</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\anasayfa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\asuna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\ehre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\jennie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\jinx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\kagit_arka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\kagit_arka2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\lhi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\oci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\pempe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\pempekatana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\rose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\sarimor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\sarimoryan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\stendarr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\lowlow\asuna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\lowlow\ehre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\lowlow\jennie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\lowlow\jinx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\lowlow\kagit_arka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\lowlow\lhi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\lowlow\oci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\lowlow\pempe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\lowlow\pempekatana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\lowlow\rose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\lowlow\sarimor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\lowlow\sarimoryan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\lowlow\stendarr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\low\lowlow\kagit_arka2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\asuna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\ehre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\jennie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\jinx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\kagit_arka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\lhi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\oci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\pempe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\pempekatana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\rose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\sarimor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\sarimoryan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\stendarr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\aa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\bb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\dd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\ee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\cc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\hh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\ff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\gg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\jj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\kk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\ll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\mm.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
